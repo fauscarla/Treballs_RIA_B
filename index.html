@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400&display=swap" rel="stylesheet">
+    <title>Treballs RIA</title>
+    <style type="text/css">  
+    /*reset*/
+        
+       *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           }
+        
+        img{
+            width: 100%;
+            height: auto;
+        }
+        
+        html{
+           font-size: 18px;  
+        }
+        
+    /*fonts*/
+        body{
+            font-family: 'Noto Sans TC', sans-serif;
+          }
+        
+        .grid-container{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+          }
+        
+        header{
+            display: flex;
+            flex-direction: column;
+            padding: 2em 2em;
+            width: 100%;
+            height: 100vh;
+            color: #efd8d8;
+            background-color: #b3594d;
+            background-image: url(img/img_fondo.png);
+            background-size: cover;
+            background-position: -30px;
+            font-weight: 400;
+            align-items: flex-start;
+            justify-content: space-around;
+          }
+            
+        h1{
+            font-size: 16vw;
+            line-height: 15vw; 
+            }
+        
+        h1 span{
+            position: absolute;
+            margin: -1vw 0 0 0;
+            font-size: 5.5vw;
+        }
+        h2{
+            font-size: 6.7vw;
+        }
+        
+        nav{
+            position: sticky;
+            top: 0;
+            display: flex;
+            padding: 0 2em;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #b3594d;
+            height: 108px;
+        }
+
+        nav a{
+            color: #efd8d8;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        
+        main{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 4em 2em 0 2em;
+            background-color: #efd8d8;
+
+        }
+        
+        main section{
+            width: 100%;
+            padding: 0.6em 0.6em 0 0.6em;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            background-color: #ff9587;
+            border-radius: 8px;
+            
+        }
+        
+        main section figure{
+            width: 100%;
+            height: 232px;  
+        }
+        
+        main section figure img{
+            max-height: 100%;
+            max-width: 100%;
+            object-position: center top;
+            object-fit: cover;
+        }
+        
+        main section figcaption{
+            display: flex;
+            color: white;
+            background: #ff9587;
+            height: 40px;
+            align-items: center;
+            justify-content: center; 
+        }
+        
+        footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            justify-content: space-around;
+            height: 260px;
+            padding: 1em 2em;
+        }
+        
+        footer a{
+            color: #efd8d8;
+            text-decoration: none;
+            font-size: 1.5em;
+            text-transform: uppercase;
+        }
+        
+        .xxss{
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .email{
+            display: flex;
+            justify-content: center;
+        }
+        
+        
+        /* Extra small devices (phone, 600px and down) */
+        @media only screen and (max-width: 767px){
+            body{
+                background: #b3594d;
+            }
+        }
+            
+             /* Medium devices (landscape tablets, 768px and down) */
+        @media only screen and (min-width: 768px){
+            body{
+                background: #b3594d;
+            }
+            
+            header{
+                background-image: url(img/Grupo%2010.png);
+                background-position: center;
+            }
+            
+            h1{
+                width: 55%;
+                margin: auto;
+                font-size: 8vw;
+                line-height: 7vw;
+            }
+
+            h1 span{
+                width: 55%;
+                margin: auto;
+                position: relative;
+                font-size: 3,7vw;
+                top:-20px;
+                padding: 20cw 0 0 0;   
+                text-align: left;
+                }
+            
+        h2{
+                width: 55%;
+                margin: auto;
+                font-size: 3.6vw;
+            }
+        
+        h3{
+            width: 55%;
+            margin: auto;
+        }
+            
+        nav{
+            font-size: 2em;
+            padding: 0 30vw;
+                
+            }
+            .grid-container{
+                width: 90%;
+                margin: auto;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            main section{
+                max-width: 47.5%;  
+                margin: 0.5em;
+            }
+        
+        }
+            
+             /* Extra large devices (landscape and deskops, 1200px and up) */
+        @media only screen and (min-width: 1200px){
+            body{
+                background: #b3594d;
+            }
+            h1{
+                width: 80%;
+            }
+            
+            h2{
+                width: 80%;
+                text-align: right;
+                }
+            
+            h1 br{
+                display: none;    
+            }
+            
+            main section{
+                max-width: 31%;  
+                margin: 0.5em;
+            }
+            
+            footer{
+                align-items: center;
+                flex-direction: row;
+            }
+            
+            .xxss{
+                width: 65%;
+                justify-content: space-between;
+            }
+        }
+            
+        
+    </style>
+</head>
+
+<body>
+  <div>
+   <header class="header">
+    <h1>Treballs Recursos<br>Interactius<br>Aplicats<br>
+    <span>a la gràfica publicitària</span></h1>
+    <h2>CFGS Gràfica Publicitària<br>EASDAlcoi 20/21</h2>
+    <h3>Carla Faus</h3>
+   </header>
+    <nav>
+        <a href="#">Projectes</a>
+        <a href="#">Contactes</a>
+    </nav>
+    
+    <main class="main">
+      <div class="grid-container">
+         <section>
+          <figure>
+           <img src="img/Captura_treball.JPG" alt="p1_webtreballs">
+           </figure>
+           <figcaption>
+           <h4>
+           <a href="https://fauscarla.github.io/p0_llocweb/">p0_llocweb</a>
+           </h4>
+           </figcaption>
+       </section>
+       
+       <section>
+          <figure>
+           <img src="img/Captura_TREBALL_P1.JPG" alt="p1_webtreballs">
+           </figure>
+           <figcaption>
+           <h4>
+           <a href="https://fauscarla.github.io/Treballs_RIA_B/">p1_webtreball</a>
+           </h4>
+           </figcaption>
+       </section>
+          
+           <section>
+          <figure>
+           <img src="img/Captura_treball.JPG" alt="p1_webtreballs">
+           </figure>
+           <figcaption>
+           <h4>p0_llocweb</h4>
+           </figcaption>
+       </section>
+       </div>
+    </main>
+   
+    <footer class="footer">
+    <div class="xxss">
+     <a href="http://twitter.com/pokelinkle">Twitter</a>
+     <a href="http://instagram.com/pokelinkle">Insta</a>
+     <a href="http://www.ello.com/carlafaus">Ello</a>
+    </div>
+    <div class="email">
+    <a href="mailto:fausic@easdalcoi.es">E-Mail</a>
+    </div>
+     </footer>
+     
+</body>
+</html>
